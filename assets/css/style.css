@@ -1,0 +1,34 @@
+.red{
+  background-color: #D90404 !important;
+  color: white !important;
+}
+
+.white{
+  background-color: white !important;
+}
+
+.text-red{
+  color: #D90404 !important;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+}
+
+p{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+.anton{
+  font-family: "Anton", sans-serif;
+}
+
+body {
+  background-image: url(../img/fondo1.jpg) !important;
+  background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+  background-position: center; /* Centra la imagen en el fondo */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-attachment: fixed; /* Fija la imagen al fondo */
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SuperHero API</title>
+  <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <!--Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <!--BS-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!--Scripts jQuery-->
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+<body>
+  
+
+  <!--Navbar-->
+  <nav class="navbar white mb-5">
+    <div class="container-fluid justify-content-center">
+      <a class="navbar-brand anton text-red" href="#">
+        <img src="assets/img/sh2.jpg" alt="Logo" width="50" height="35" class="d-inline-block align-text-middle">
+        SuperHero
+      </a> 
+    </div>
+  </nav>
+
+  <!--Busqueda-->
+  <div class="container card mb-3 pt-3 border-white">
+    <div class="row g-0 align-items-center">
+      <div class="col-md-4">
+        <img src="assets/img/sh1.jpg" class="img-fluid rounded-start mb-3" alt="superheroes">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h3 class="card-title">¡Encuentra a tu Personaje de Comic Favorito!</h3>
+          <p class="card-text">Ingresa el número del Superhéroe o Villano que quieres buscar</p>
+          <form id="searchForm" role="search">
+            <input id="heroId" class="form-control" type="number" placeholder="Ingresa un número del 1 al 732" aria-label="Buscar">
+            <button type="submit" id="searchButton" class="btn red mt-3 w-25">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--Resultado-->
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-6 d-flex">
+        <div id="resultado"></div>
+        <div class=" ms-5" id="chartContainer"></div>  
+      </div>
+    </div>
+  </div>
+
+
+
+<!--Scripts CanvasJS-->
+<script src="https://cdn.canvasjs.com/ga/jquery.canvasjs.min.js"></script>
+<!--Scripts Propios-->
+<script src="assets/js/jQuery.superheroe.js"></script>
+<script src="assets/js/script.js"></script>
+</body>
+</html>
