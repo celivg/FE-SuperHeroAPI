@@ -1,7 +1,7 @@
-jQuery.fn.superheroe = function () {
+jQuery.fn.superheroe = function (token, heroId) {
 
   let heroId = $('#heroId').val();
-  let accessToken = '39db0058bd42e47573dc6446532d4513'.val();
+  let accessToken = token;
   
   const settings = {
     "async": true,
