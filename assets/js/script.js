@@ -1,8 +1,9 @@
-$(document).ready(function () {
-  $('#searchButton').on('click', function () {
-    $.fn.superheroe();
-  });
-});
+$(document).ready(function() {
+  // Validación
+  // Escuchamos click del formulario
+  $("form").on("submit", manejoFomulario)
+})
+
 
 const manejoFomulario = function(e) {
   e.preventDefault();
