@@ -1,11 +1,13 @@
 jQuery.fn.superheroe = function () {
 
   let heroId = $('#heroId').val();
-
+  let accessToken = token
+  token = '39db0058bd42e47573dc6446532d4513'
+  
   const settings = {
     "async": true,
     "crossDomain": true,
-    "url": `https://superheroapi.com/api.php/39db0058bd42e47573dc6446532d4513/${heroId}`,
+    "url": `https://superheroapi.com/api.php/${accessToken}/${heroId}`,
     "method": "GET",
     "dataType": "json",
     "headers": {
